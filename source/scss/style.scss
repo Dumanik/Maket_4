@@ -1,0 +1,877 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*-----------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+body{
+  font-family: 'Open Sans', sans-serif;
+
+}
+/*--------------------------HEADER---------------------------------*/
+.header{
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  box-shadow: 0 0 10px 0 rgb(0,0,0,0.8);
+  margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+}
+
+.container{
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+.header_burger{
+  display: none;
+}
+.header_logo{
+  float: left;
+  margin: 10px auto;
+}
+.header_nav{
+  float: right;
+  margin-top: 40px ;
+
+}
+ul.menu{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+
+}
+
+ul.menu a{
+  padding: 15px;
+  text-decoration: none;
+  color: #666666;
+  font-size: 16px;
+}
+ul.menu a:hover{
+  background-color: #eeeeee;
+  color: #6196c4;
+}
+.last_item_menu {
+  background-color: rgb(55,122,183);
+  color: white;
+  border-radius: 30px;
+}
+
+ul.menu a.last_item_menu{
+  color: white;
+}
+ul.menu a.last_item_menu:hover{
+  background-color:rgb(22,109,187) ;
+}
+
+/*--------------------------Block_form---------------------------------*/
+.block_form{
+  background-color: #f7f7f7;
+  font-size: 14px;
+  padding-bottom: 20px;
+  padding-top: 100px;
+}
+.block_form_registration{
+  display: flex;
+}
+.block_form_text{
+  flex: 50%;
+  padding: 15px 80px 40px 80px;
+  text-align: center;
+}
+
+.block_form_title{
+  padding: 20px 0;
+}
+.block_form_title h2{
+  font-size: 28px;
+  font-weight: 400;
+}
+.block_form_text p{
+  font-size: 14px;
+  color: rgb(127,118,117);
+  line-height: 1.8;
+  margin: 0 auto;
+}
+.form_registration_title a{
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+}
+.form_registration_title {
+  margin: 20px 0 10px;
+  font-weight: 400;
+}
+.block_form_registration{
+  padding: 15px;
+}
+.input_row{
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px 15px;
+  border: 1px solid #bababa;
+}
+
+.form_registration_row{
+  margin-bottom: 10px;
+}
+.input_row:hover{
+  box-shadow: 0 0 10px dodgerblue;
+
+}
+.lable{
+  color: rgb(103,105,111);
+}
+.register_name{
+  padding-bottom: 5px;
+}
+.checkbox {
+  min-height: 20px;
+}
+.checkbox span {
+  padding-left: 5px;
+}
+.checkbox a{
+  color: rgb(107,149,200);
+}
+.button_registration{
+  margin-left: 70px;
+  padding: 15px 95px;
+  border-radius: 50px;
+  color: white;
+  background-color: rgb(55,122,183);;
+  margin-top: 20px;
+}
+.button_registration:hover{
+  background-color:rgb(22,109,187);
+}
+/*--------------------------BLOCK_COURSE---------------------------------*/
+.block_course_title{
+  padding-top: 65px;
+  font-size: 34px;
+  color: #333;
+  text-align: center;
+}
+.block_course_item{
+  padding-top: 30px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.course_item{
+  padding: 30px;
+  text-align: center;
+  flex: 33%;
+}
+.course_info{
+  padding: 20px 0;
+  border-bottom: 1px solid #3498db;
+
+}
+.course_info h3{
+  font-size: 24px;
+  color: #666666;
+  line-height: 1.1;
+}
+.course_text{
+  padding: 30px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #888;
+}
+/*--------------------------BLOCK_COURSE_SLIDER---------------------------------*/
+
+.slider_pointer_course{
+  text-align: center;
+}
+/*--------------------------BLOCK_ACHIEVEMENT---------------------------------*/
+.block_achievement{
+  background-color: #3498db;
+}
+.achievement{
+  padding: 80px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.achievement_item{
+  text-align: center;
+}
+.achievement_number{
+  padding: 20px 0 10px;
+  font-size: 28px;
+  color: white;
+}
+.achievement_text{
+  color: white;
+  font-size: 16px;
+}
+/*--------------------------SLIDE_STUDENT---------------------------------*/
+.slideshow_student{
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.slide_student_title{
+  font-size: 34px;
+  margin: 65px 0 5px;
+  color: #333;
+  text-align: center;
+}
+.slide_student_text{
+  padding: 25px 30px 15px;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto 25px;
+  line-height: 1.7;
+  font-family: "OpenSans-Light", OpenSans, sans-serif;
+  font-size: 22px;
+  color: #666;
+}
+
+.slide_student_img img{
+  border-radius: 50%;
+  border: 2px solid #9d9d9d;
+}
+.slide_student_img{
+  text-align: center;
+}
+.slide_student_name{
+  padding-top: 15px;
+  font-size: 20px;
+  color: #333;
+  text-align: center;
+}
+.slide_student_rang{
+  padding-bottom: 20px;
+  text-align: center;
+}
+.slide_student_rang p{
+  color: #888;
+  font-size: 16px;
+  font-style: italic;
+}
+.slider_pointer{
+  position: relative;
+  padding-top: 30px;
+}
+.slider_pagination .swiper-pagination-bullet{
+  max-width: 12px;
+  max-height: 12px;
+  cursor: pointer;
+  background:#666 ;
+
+}
+.slider_pagination{
+  position: absolute;
+  text-align: center;
+}
+
+/*--------------------------VIDEO_BLOCK---------------------------------*/
+.video_block{
+  background-color: #f7f7f7;
+}
+.video_title{
+  padding-bottom: 20px;
+  font-size: 34px;
+}
+.video_title h2 a{
+  text-decoration: none;
+  color: #333;
+  text-transform: none;
+  cursor:text;
+}
+.video_text{
+  font-size: 14px;
+  line-height: 22px;
+  color: #cacaca;
+  padding-bottom: 20px;
+}
+.video_movie{
+  max-width: 1020px;
+}
+.video_block_content{
+  padding: 60px 100px;
+  text-align: center;
+}
+
+
+/*--------------------------Block_MENTORS---------------------------------*/
+
+.mentor_item{
+  display: flex;
+}
+.slide_mentor_name{
+  border-bottom: 1px solid #F7F7F7;
+  padding-bottom: 15px;
+  font-family: "OpenSans-Bold", OpenSans, sans-serif;
+  font-size: 20px;
+  color: #3498db;
+}
+
+.mentor_about{
+  padding:30px 30px 0 50px;
+
+}
+.slide_mentor_text {
+  padding: 30px 0;
+  line-height: 1.6;
+  font-family: "OpenSans-Light", OpenSans, sans-serif;
+  font-size: 16px;
+  color: #888;
+}
+.slide_mentor_text p{
+  margin-bottom: 10px;
+}
+/*--------------------------Contants---------------------------------*/
+.block_contacts{
+  background-color: #377ab7;
+}
+
+.contacts_item{
+  padding: 40px 0;
+}
+.contacts_item {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.c_icon{
+  color: white;
+  font-size: 50px;
+  font-family: FontAwesome;
+  padding-bottom: 20px;
+}
+.c_text{
+  padding: 5px 0 5px;
+  font-family: "OpenSans-Bold", OpenSans, sans-serif;
+  font-size: 16px;
+  color: white;
+}
+.c_number{
+  font-family: "OpenSans-Light", OpenSans, sans-serif;
+  font-size: 14px;
+  color: white;
+}
+.c_number a{
+  font-family: "OpenSans-Light", OpenSans, sans-serif;
+  font-size: 14px;
+  color: white;
+}
+.c_number a:hover{
+  text-decoration: underline;
+}
+
+/*--------------------------COPYRIGHT---------------------------------*/
+.copyright{
+  color:#377ab7;
+  padding: 100px 0px;
+  text-align: center;
+  font-family: "OpenSans-Light", OpenSans, sans-serif;
+  font-size: 14px;
+}
+.copyright a{
+  color:#377ab7;
+
+}
+.copyright a:hover{
+  text-decoration: underline;
+}
+.confidentiality{
+  padding-top: 20px;
+}
+.confidentiality a{
+  font-family: "OpenSans-Light", OpenSans, sans-serif;
+  font-size: 14px;
+  color: #666;
+  text-decoration: none;
+}
+
+/*-----------------@@@@@@@@@ MEDIA @@@@@@@@@-------------------------*/
+@media (max-width: 1220px) {
+  .container{
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container{
+    max-width: 750px;
+  }
+  ul.menu{
+    padding-right: 0;
+  }
+  ul.menu a{
+    font-size: 16px;
+  }
+  .block_form_text{
+    padding: 15px 40px;
+  }
+  .block_form_title{
+    padding-top: 0;
+  }
+  .button_registration{
+    margin: 15px 20px;
+  }
+  .block_form{
+    padding-top: 60px;
+  }
+  .block_form_title h2{
+    font-size: 24px;
+  }
+  .form_registration_title{
+    text-align: center;
+  }
+  .header{
+    height: 50px;
+  }
+  .header_content{
+
+  }
+  .header_logo{
+    margin:0;
+    padding-top: 5px;
+
+  }
+  .header_logo img{
+    height: 40px;
+    width: 40px;
+  }
+  .header_burger{
+    display: block;
+    position: relative;
+    padding: 10px;
+    top: 15px;
+    width: 30px;
+    background-color: #377ab7;
+    border-radius: 10%;
+    z-index: 5;
+    float:right;
+  }
+
+  .header_burger span{
+    position: absolute;
+    background-color: white;
+    left: 5px;
+    width: 70%;
+    height: 2px;
+    top: 9px;
+  }
+
+
+  .header_burger:before{
+    top: 3px;
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    left: 5px;
+    border-radius: 2px;
+  }
+  .header_burger:after{
+    bottom: 3px;
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    left: 5px;
+  }
+  .header_burger.active span{
+    transform: scale(0);
+  }
+  .header_burger.active:before{
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header_burger.active:after{
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  nav{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 70px 10px 20px 10px ;
+    transition: all 0.5s ease 0s;
+    background-color: white;
+
+  }
+  nav.active{
+    top: 0;
+    height: 45%;
+  }
+  ul.menu{
+    display: block;
+    text-align: center;
+  }
+  ul.menu li {
+    padding: 5px;
+  }
+  ul.menu a{
+    text-decoration: none;
+    font-size: 16px;
+  }
+  ul.menu a:hover{
+    text-decoration: none;
+    background-color: white;
+    color: #767676;
+  }
+  ul.menu a.last_item_menu{
+    color: white;
+    padding: 5px;
+  }
+  ul.menu li a.last_item_menu:hover{
+    color: white;
+  }
+
+
+  /*--------------------------Block_form---------------------------------*/
+  .block_form{
+    padding-top: 60px;
+  }
+  .block_form_title h2{
+    font-size: 24px;
+  }
+  .form_registration_title{
+    text-align: center;
+  }
+  /*--------------------------BLOCK_COURSE---------------------------------*/
+
+  /*--------------------------BLOCK_ACHIEVEMENT---------------------------------*/
+
+  .achievement{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  .achievement_item{
+    flex: 25%;
+    padding: 10px;
+  }
+  .achievement_number{
+    font-size: 14px;
+  }
+  .achievement_text{
+    font-size: 12px;
+    line-height: 1.4;
+  }
+  /*--------------------------SLIDE_STUDENT---------------------------------*/
+
+  .slide_student_title h2{
+    font-size: 24px;
+  }
+  .slide_student_text {
+    font-size: 14px;
+    max-width: 100%;
+    padding: 20px;
+  }
+  .slide_student_img {
+    display: none;
+  }
+
+  /*--------------------------VIDEO_BLOCK---------------------------------*/
+
+  .video_block_content{
+    padding: 50px 20px;
+  }
+
+  .video_movie iframe{
+    height: 200px;
+  }
+
+  /*--------------------------Block_MENTORS---------------------------------*/
+
+  .mentor_item{
+    display: block;
+  }
+  .slide_mentor_name{
+    text-align: center;
+  }
+  .slide_student{
+    overflow: hidden;
+  }
+  .slide_mentor_img{
+    text-align: center;
+  }
+  .slide_mentor_img img{
+    width: 150px;
+    height: 150px;
+  }
+  /*--------------------------CONTACTS---------------------------------*/
+  .contacts_item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  .contact_flex{
+    padding: 40px;
+    flex: 25%;
+  }
+  .c_text{
+    font-size: 14px;
+  }
+  .c_number{
+    font-size: 12px;
+  }
+
+  .c_number a {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+@media (max-width: 767px) {
+  .container{
+    max-width: none;
+  }
+  .block_form_text{
+    padding: 10px;
+  }
+  .header_logo img{
+    max-width: 100%;
+  }
+  .block_form_registration{
+    display: block;
+  }
+  .button_registration{
+    padding: 10px 20px;
+  }
+  .btn_fix{
+    text-align: center;
+  }
+  /*--------------------------Burger_menu---------------------------------*/
+  .header{
+    height: 50px;
+  }
+  .header_content{
+
+  }
+  .header_logo{
+    margin:0;
+    padding-top: 5px;
+
+  }
+  .header_logo img{
+    height: 40px;
+    width: 40px;
+  }
+  .header_burger{
+    display: block;
+    position: relative;
+    padding: 10px;
+    top: 15px;
+    width: 30px;
+    background-color: #377ab7;
+    border-radius: 10%;
+    z-index: 5;
+    float:right;
+  }
+
+  .header_burger span{
+    position: absolute;
+    background-color: white;
+    left: 5px;
+    width: 70%;
+    height: 2px;
+    top: 9px;
+  }
+
+
+  .header_burger:before{
+    top: 3px;
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    left: 5px;
+    border-radius: 2px;
+  }
+  .header_burger:after{
+    bottom: 3px;
+    content: '';
+    background-color: white;
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    left: 5px;
+  }
+  .header_burger.active span{
+    transform: scale(0);
+  }
+  .header_burger.active:before{
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .header_burger.active:after{
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  nav{
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 70px 10px 20px 10px ;
+    transition: all 0.5s ease 0s;
+    background-color: white;
+
+  }
+  nav.active{
+    top: 0;
+    height: 45%;
+  }
+  ul.menu{
+    display: block;
+    text-align: center;
+  }
+  ul.menu li {
+    padding: 5px;
+  }
+  ul.menu a{
+    text-decoration: none;
+    font-size: 16px;
+  }
+  ul.menu a:hover{
+    text-decoration: none;
+    background-color: white;
+    color: #767676;
+  }
+  ul.menu a.last_item_menu{
+    color: white;
+    padding: 5px;
+  }
+  ul.menu li a.last_item_menu:hover{
+    color: white;
+  }
+
+
+  /*--------------------------Block_form---------------------------------*/
+  .block_form{
+    padding-top: 60px;
+  }
+  .block_form_title h2{
+    font-size: 24px;
+  }
+  .form_registration_title{
+    text-align: center;
+  }
+  /*--------------------------BLOCK_COURSE---------------------------------*/
+
+  .course_info h3{
+    font-size: 16px;
+  }
+  .course_item{
+    margin: 0 20px 0 40px;
+  }
+  .course_item:nth-child(2){
+    margin-left: 65px;
+  }
+  .course_text{
+    padding: 10px;
+    line-height: 1.2;
+  }
+
+  /*--------------------------BLOCK_ACHIEVEMENT---------------------------------*/
+
+
+
+
+  /*--------------------------SLIDE_STUDENT---------------------------------*/
+
+  .slide_student_title {
+    h2 {
+      font-size: 24px;
+    }
+  }
+  .slide_student_text {
+    font-size: 14px;
+    max-width: 100%;
+    padding: 20px;
+  }
+  .slide_student_img {
+    display: none;
+  }
+
+
+  /*--------------------------VIDEO_BLOCK---------------------------------*/
+
+  .video_block_content{
+    padding: 50px 20px;
+  }
+
+  .video_movie iframe{
+    height: 200px;
+  }
+
+  /*--------------------------Block_MENTORS---------------------------------*/
+
+  .mentor_item{
+    display: block;
+  }
+  .slide_mentor_name{
+    text-align: center;
+  }
+  .slide_student{
+    overflow: hidden;
+  }
+  .slide_mentor_img{
+    text-align: center;
+  }
+  .slide_mentor_img img{
+    width: 150px;
+    height: 150px;
+  }
+
+  /*--------------------------Contants---------------------------------*/
+  .contacts_item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+  .contact_flex{
+    padding: 20px;
+    flex: 25%;
+  }
+  .c_text{
+    font-size: 14px;
+  }
+  .c_number{
+    font-size: 12px;
+  }
+
+  .c_number a {
+    font-size: 12px;
+  }
+}
